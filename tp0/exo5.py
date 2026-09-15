@@ -20,7 +20,7 @@ consommer_piece(pieces_stock, "ModeleA", "moteurs", 3)
 assert pieces_stock["ModeleA"]["moteurs"] == 7
 
 def ajouter_modele(stock,modele,moteurs,capteurs,roues):
-    """ajoute un modele au stockionnaire"""
+    """ajoute un modele au dictionnaire"""
     stock[modele]={"moteurs":moteurs,"capteurs":capteurs,"roues":roues}
 
 ajouter_modele(pieces_stock, "ModeleC",moteurs=4, capteurs=10, roues=16)
@@ -28,7 +28,7 @@ assert pieces_stock["ModeleC"] == \
 {"moteurs": 4, "capteurs": 10, "roues": 16}
 
 def total_pieces(stock):
-    """retourne un stockionnaire avec les quantités totales de chaque pièce"""
+    """retourne un dictionnaire avec les quantités totales de chaque pièce"""
     tot_mot=0
     tot_capt=0
     tot_roues=0
